@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Esperança</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo da ONG Esperança" class="logo">
+    </div>
+
+    <div class="access-controls" aria-hidden="false">
+      <button id="toggle-dark" class="access-btn" aria-pressed="false" title="Ativar modo escuro">🌓</button>
+      <button id="toggle-hc" class="access-btn" aria-pressed="false" title="Ativar alto contraste">⚫</button>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" aria-hidden="true">
+    <label for="menu-toggle" class="hamburger" role="button" aria-label="Abrir menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav role="navigation" aria-label="Menu principal">
+      <ul class="menu" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html">Início</a></li>
+        <li role="none"><a role="menuitem" href="projetos.html" class="active">Projetos</a></li>
+        <li role="none"><a role="menuitem" href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container" tabindex="-1" aria-live="polite">
+    <section class="grid-12">
+      <h1>Projetos Sociais</h1>
+      <p>Conheça nossos projetos e saiba como participar como voluntário ou doador.</p>
+    </section>
+
+    <section class="grid-4 card" aria-labelledby="proj1">
+      <img src="img/projeto1.png" alt="Crianças em sala de aula">
+      <h3 id="proj1">Projeto Educação</h3>
+      <p>Aulas de reforço e atividades culturais para crianças em vulnerabilidade.</p>
+      <span class="badge">Educação</span>
+      <button class="primary">Participar</button>
+    </section>
+
+    <section class="grid-4 card" aria-labelledby="proj2">
+      <img src="img/voluntarios.png" alt="Voluntários organizando doações">
+      <h3 id="proj2">Projeto Voluntariado</h3>
+      <p>Engajamento de voluntários em ações comunitárias.</p>
+      <span class="badge">Voluntariado</span>
+      <button class="primary">Inscrever-se</button>
+    </section>
+
+    <section class="grid-4 card" aria-labelledby="proj3">
+      <img src="img/logo.png" alt="">
+      <h3 id="proj3">Campanhas de Doação</h3>
+      <p>Contribua para causas sociais e acompanhe resultados em tempo real.</p>
+      <span class="badge">Doação</span>
+      <button class="primary">Doar Agora</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança — Todos os direitos reservados</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

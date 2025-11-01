@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Esperança</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Logo da ONG Esperança" class="logo">
+    </div>
+
+    <!-- Accessibility toggles -->
+    <div class="access-controls" aria-hidden="false">
+      <button id="toggle-dark" class="access-btn" aria-pressed="false" title="Ativar modo escuro">🌓</button>
+      <button id="toggle-hc" class="access-btn" aria-pressed="false" title="Ativar alto contraste">⚫</button>
+    </div>
+
+    <!-- Menu (CSS-only hamburger) -->
+    <input type="checkbox" id="menu-toggle" aria-hidden="true">
+    <label for="menu-toggle" class="hamburger" role="button" aria-label="Abrir menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav role="navigation" aria-label="Menu principal">
+      <ul class="menu" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html" class="active">Início</a></li>
+        <li role="none"><a role="menuitem" href="projetos.html">Projetos</a></li>
+        <li role="none"><a role="menuitem" href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container" tabindex="-1" aria-live="polite">
+    <section class="grid-12">
+      <h1>Bem-vindo à ONG Esperança</h1>
+      <p>Transformando vidas através de projetos sociais e engajamento comunitário.</p>
+      <img src="img/voluntarios.png" alt="Voluntários em ação distribuindo cestas básicas">
+      <p>
+        A ONG Esperança atua em programas de educação, capacitação e apoio social.
+      </p>
+      <button class="primary">Saiba Mais</button>
+    </section>
+
+    <section class="grid-12">
+      <h2>Missão, Visão e Valores</h2>
+      <ul>
+        <li><strong>Missão:</strong> Transformar vidas através da solidariedade.</li>
+        <li><strong>Visão:</strong> Um futuro com mais igualdade e oportunidades.</li>
+        <li><strong>Valores:</strong> Transparência, empatia e compromisso social.</li>
+      </ul>
+    </section>
+
+    <section class="grid-12">
+      <h2>Contato</h2>
+      <p>E-mail: <a href="mailto:contato@ongesperanca.org.br">contato@ongesperanca.org.br</a></p>
+      <p>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança — Todos os direitos reservados</p>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
